@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – HTA Concept</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">H.T.A <span>Concept</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        
+        <li><a href="services.html">Nos services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="burger" onclick="toggleMenu()">☰</button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contactez-nous</h1>
+      <p>Notre équipe répond à toutes vos demandes</p>
+    </div>
+  </section>
+
+  <section class="contact-section section-light">
+    <div class="container contact-grid">
+
+      <div class="contact-info">
+        <h2>Nos coordonnées</h2>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>
+            <strong>Adresse</strong><br>
+            HTA Concept<br>
+            113 Rue du Moulin<br>
+            79000 Magné, France
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div>
+            <strong>Téléphone</strong><br>
+            <a href="tel:+33760118346">+33 7 60 11 83 46</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <div>
+            <strong>Email</strong><br>
+            <a href="mailto:hta.guerin@gmail.com">hta.guerin@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">🗺️</span>
+          <div>
+            <strong>Zones d'intervention</strong><br>
+            Nouvelle-Aquitaine<br>
+            Pays de la Loire<br>
+            Occitanie
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Envoyer un message</h2>
+        <form action="mailto:hta.guerin@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="nom">Nom / Société</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom ou société" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" name="tel" placeholder="+33 6 ..." />
+          </div>
+          <div class="form-group">
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre besoin..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Envoyer le message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-name">H.T.A Concept</p>
+      <p>113 Rue du Moulin, 79000 Magné, France</p>
+      <p>📞 +33 7 60 11 83 46 &nbsp;|&nbsp; 📧 hta.guerin@gmail.com</p>
+      <p class="footer-copy">© 2024 HTA Concept. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
